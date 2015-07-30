@@ -14,7 +14,7 @@ RUN DEBIAN_FRONTEND="noninteractive" && \
 # Create data directories
 RUN mkdir -p /data/mysql /data/www
 
-RUN curl -G -o /data/joomla.zip http://joomlacode.org/gf/download/frsrelease/19239/158104/Joomla_3.2.3-Stable-Full_Package.zip && \
+RUN curl -G -o /data/joomla.zip https://github.com/joomla/joomla-cms/releases/download/3.4.1/Joomla_3.4.1-Stable-Full_Package.zip && \
 	unzip /data/joomla.zip -d /data/www && \
 	rm /data/joomla.zip
 
